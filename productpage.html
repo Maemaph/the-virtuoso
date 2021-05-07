@@ -1,0 +1,143 @@
+<!Doctype Html>
+<html>
+  <head>
+    <title>Beyond Virtual Reality</title>
+    <link rel="stylesheet" href="product.css" type="text/css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 400px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  </head>
+  <body>
+
+    <!-- Header -->
+    <section id="menu"> 
+
+      <div id="logo">
+        <img src = "media/vituale.png" id="header-img" alt="logo-header">
+        <h2>The Virtuoso</h2>       
+      </div>
+
+      <nav id="nav-bar">
+        <a href="#video" class="nav-link"> Watch</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#form" class="nav-link">More Products</a>
+      </nav>      
+      
+    </section>
+    
+    <main>
+      <!-- Features -->
+      <div id="cta">
+        <h1>Experience Virtual Reality like Reality!!</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input name="email" type="email" id="email" placeholder="Enter your email here..." required><br>
+          <input type="submit" id="submit" value="experience now">
+        </form>
+      </div>
+
+      <div id="features">      
+          <div class="items">
+            <img class="icons" src="media/real.png" alt="experience-icon">
+            <h3>Real Experience</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur <br>elit,
+              sed do eiusmod tempor incididunt ut<br>dolore magna aliqua.
+               Ut enim ad minim<br>quis nostrud exercitation
+               ullamco laboris <br>aliquip ex ea commodo Consequat</p>
+          </div>
+
+          <div class="items">
+            <img class="icons" src="media/quality.png" alt="quality-icon">
+            <h3>Quality Content</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit,
+               sed do eiusmod tempor incididun<br>t ut labore et dolore magna aliqua.<br>
+                Ut enim ad minim veniam, quis <br>nostrud exercitation
+                 ullamco laboris nisi ut <br>aliquip ex ea commodo Consequat</p>
+          </div>
+
+          <div class="items">
+            <img class="icons" src="media/portable.png" alt="portable-icon">
+            <h3>Portable Content</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit,
+              sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.<br>
+               Ut enim ad minim veniam, quis <br>nostrud exercitation
+                ullamco laboris nisi ut <br>aliquip ex ea commodo Consequat</p>
+          </div>  
+      </div>
+
+      <!-- Video -->
+      <div class="video">
+        <video src="media/temp-video.mp4" controls class="video"></video>      
+      </div>
+      <span id="code">
+        <a href="#"><p>check code</p></a>
+      </span>
+      <!-- Products & Pricing -->
+      <div id="Pricing">
+        <div class="product">
+          <h4>Trailer</h4><hr>
+          <img src="media/virt1.jpg" alt="trailer" class="show">
+          <p>2mins trailer video.</p>
+          <p>Including video tour guide</p>
+          <a href="#"><button>Watch Now</button></a>
+        </div>
+
+        <div class="product">
+          <h4>Pro</h4><hr>
+          <img src="media/virt2.jpg" alt="pro" class="show">
+          <p>Full video content</p>
+          <p>Ebook guide</p>
+          <p>Including video tour guide</p>
+          <a href="#"><button>Watch Now</button></a>
+        </div>
+
+        <div class="product">
+          <h4>Premium</h4><hr>
+          <img src="media/virt3.png" alt="premium" class="show">
+          <p>Full video kit</p>
+          <p>Ebook guide</p>
+          <p>Access to one extra content of choice</p>
+          <p>Including video tour guide</p>
+          <a href="#"><button>Watch Now</button></a>
+        </div>      
+
+      </div>
+
+    </main>
+
+    <button id="scrollBtn">&Uarr;</button>
+
+    <!-- footer-->
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <p>Copyright 2020 @ The Virtuoso</p>
+    </footer>
+    
+    <script>
+      var scrollBtn = document.getElementById("scrollBtn");
+       function scrollUp(){
+         var rootElement = document.documentElement;
+         rootElement.scrollTo({
+           top: 0,
+           behavior: "smooth"
+         })
+       }
+       scrollBtn.addEventListener('click', scrollUp);
+
+       function hideBtn(){
+         if(document.body.scrollTop > 25 || document.documentElement.scrollTop > 25){
+           scrollBtn.style.display = "block";
+         }else{
+           scrollBtn.style.display = "none";
+         }
+       }
+       window.onscroll = function(){hideBtn()};
+    </script>
+
+   
+    
+  </body>
+</html>
