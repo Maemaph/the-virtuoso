@@ -1,13 +1,13 @@
 body{
-    background-image: url('media/abstract.jpg');
+    background-image: linear-gradient(45deg, rgb(0, 120, 150), rgb(2, 78, 192), rgb(0, 0, 73));
     background-size: cover;
-    font-family: raleway;
+    font-family: Helvetica;
 }
 p{
     font-weight: 15px;
 }
 #menu{
-    background-color:  rgb(63, 63, 149);
+    background-color: black;
     margin: -8px;
     display: flex;
     padding: 10px;
@@ -21,7 +21,6 @@ p{
     height: 90px;
 }
 h2{
-    font-family: raleway;
     font-size: 30px;
 }
 
@@ -29,20 +28,20 @@ nav{
     position: relative; 
     margin-left: 50%;
     margin-top: 25px;
-    font-family: raleway;
 }
 
-a{
+.nav-link{
     color: white;
     text-decoration: none;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin: 10px 10px 0 10px;
     font-size: 20px;
     text-align: right;
+    padding: 5px 10px;
+    transition: 200ms;
+
 }
-a:hover{
-    text-decoration: underline;
-    font-size: 21px;
+.nav-link:hover{
+    border-bottom: 2px solid rgb(0, 0, 145);
 }
 
 main{
@@ -70,7 +69,6 @@ input[type='email']{
     padding: 15px;
     border: 0px;
     border-radius: 7px;
-    font-family: raleway medium;
     margin-bottom: 10px;
 }
 
@@ -113,7 +111,6 @@ input[type='email']{
     border: none;
     border-radius: 25px;
     color: white;
-    font-family: raleway;
     font-size: large;
 }
 .product button:hover, input[type='submit']{
@@ -132,8 +129,7 @@ input[type='email']{
 footer{
     padding: 20px;
     margin: -8px;
-    background-color:  rgb(63, 63, 149);
-    font-family: raleway;
+    background-color: black;
     text-align: center;
 }
 
@@ -174,7 +170,7 @@ ul{
     padding: 10px;
     font-size: 30px;
     z-index: 10;
-    background-color: rgb(63, 63, 149);   
+    background-color: black;   
 }
 #scrollBtn:hover{
     background: linear-gradient(20deg, whitesmoke, rgb(180, 180, 246));
